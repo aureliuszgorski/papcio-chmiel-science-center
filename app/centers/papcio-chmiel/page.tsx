@@ -529,10 +529,7 @@ export default function CenterLandingPage() {
                 </div>
               </div>
 
-              {/* Spotlight / Bridge block */}
-              <div className="text-zinc-700 text-xs font-semibold leading-relaxed border-l-4 border-[#1267B1] pl-3 italic bg-zinc-50 py-3 pr-2 border-y border-r border-black/10">
-                With Artur Chmielewski’s patronage and space exploration background at NASA/JPL, the digital twin serves as a bridge between Papcio Chmiel’s imagination and real science.
-              </div>
+
 
               {/* Blueprint Footer */}
               <div className="flex items-center justify-between text-[9px] font-mono text-zinc-400 pt-4 border-t border-black/10">
