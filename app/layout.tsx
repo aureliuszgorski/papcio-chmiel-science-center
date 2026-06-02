@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Bebas_Neue, Atkinson_Hyperlegible } from "next/font/google";
 import "./globals.css";
+import PasswordProtect from "@/components/PasswordProtect";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -44,7 +45,9 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col bg-[#0C0A09] text-black font-sans selection:bg-[#FFD84D] selection:text-black">
         {/* Halftone / Comic dots grid pattern overlay */}
         <div className="absolute inset-0 -z-30 pointer-events-none opacity-[0.03] bg-[radial-gradient(#000000_15%,transparent_16%)] bg-[size:16px_16px]" />
-        {children}
+        <PasswordProtect>
+          {children}
+        </PasswordProtect>
       </body>
     </html>
   );
